@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Créditos Bancarios</title>
+  <link rel="stylesheet" href="./Styles.css">
+</head>
+<body>
+  <div class="simulador">
+    <h1>Simulador de Créditos Bancarios</h1>
+
+    <label for="tipo">Tipo de crédito:</label>
+    <select id="tipo">
+      <option value="personal">Personal</option>
+      <option value="automotriz">Automotriz</option>
+      <option value="hipotecario">Hipotecario</option>
+    </select>
+
+    <label for="monto">Monto del préstamo (CLP):</label>
+    <input type="number" id="monto" min="1000000">
+
+    <label for="periodo">Periodo (en años):</label>
+    <input type="number" id="periodo" min="1">
+
+    <button id="calcular">Calcular</button>
+
+    <h2 id="resultado"></h2>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+
+    <button id="enviar">Enviar información</button>
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
